@@ -1,6 +1,6 @@
 import sys
 import socket
-from datetime import date
+from datetime import datetime
 
 ######## UI ########
 
@@ -10,6 +10,7 @@ def print_splash(target):
     print("Welcome to the terrible port scanner!")
     print("(Really, this is embarrassing, just use nmap.)")
     print("\n")
+    print("The time is: " + str(datetime.now()))
     print("Scanning target: " + target)
     print("~" * 50)
 
